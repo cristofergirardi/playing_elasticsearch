@@ -8,7 +8,7 @@ def map_employees():
             "address": {"type": "text", "analyzer": "standard"},
             "phone": {"type": "text", "analyzer": "standard"},
             "phrase":{"type": "text", "analyzer": "custom_analyzer"},
-            "company_name": {"type": "text", "analyzer": "standard"}
+            "company_name": {"type": "keyword", "analyzer": "standard"}
         }
     }
 

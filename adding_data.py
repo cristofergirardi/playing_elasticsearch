@@ -59,8 +59,8 @@ def get_data():
     helpers.bulk(es, bulk_data)
 
     # Validate my insert of data
-    # es.indices.refresh(index="employees")
-    # es.cat.count(index="employees", format="json")
+    es.indices.refresh(index="employees")
+    es.indices.refresh(index="companies")
     print(f'Total employees = {es.count(index="employees")}')
     print(f'Total companies = {es.count(index="companies")}')
 

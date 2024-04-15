@@ -3,6 +3,7 @@ __pycache__/
 *__pycache__*
 *.py[cod]
 *$py.class
+*http_ca.crt
 
 # C extensions
 *.so
