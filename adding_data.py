@@ -37,7 +37,8 @@ def get_data():
                         "address" : row["address"],
                         "age" : row["age"],
                         "phone" : row["phone"],
-                        "phrase" : row["phrase"]
+                        "phrase" : row["phrase"],
+                        "company_name" : row["company_name"]
                     } 
                 }
             )
