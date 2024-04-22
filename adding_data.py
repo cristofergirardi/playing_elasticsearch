@@ -58,11 +58,11 @@ def get_data():
         )
     helpers.bulk(es, bulk_data)
 
-    # Validate my insert of data
-    es.indices.refresh(index="employees")
-    es.indices.refresh(index="companies")
+    # Validate my insert of data    
     print(f'Total employees = {es.count(index="employees")}')
     print(f'Total companies = {es.count(index="companies")}')
+    es.indices.refresh(index="employees")
+    es.indices.refresh(index="companies")
 
 
 if __name__ == '__main__':
